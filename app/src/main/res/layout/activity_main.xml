@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee shop"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:gravity="center"
+
+
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    android:layout_weight="2"
+    android:background="#FF03DAC5">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="minus"
+        android:id="@+id/minus">
+
+            </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:background="#FF3700B3"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/noOfCoffee"
+        >
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:layout_weight="1"
+        android:onClick="plus"
+        android:id="@+id/plus"
+        >
+
+
+
+    </Button>
+
+
+</LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/toppings_layout"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapati"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:id="@+id/chapati">
+
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mandazi"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:id="@+id/mandazi">
+
+            </CheckBox>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ugali"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:id="@+id/ugali">
+
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/pilau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilau"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"></CheckBox>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/clayout"
+        android:background="#FF018786">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Your order"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:id="@+id/my_order"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:text="Confirm"
+                android:id="@+id/confirm_button"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:text="ORDER"
+            android:id="@+id/order_button"
+            android:textSize="32sp"
+            android:textStyle="bold">
+
+        </Button>
+        </LinearLayout>
+</LinearLayout>
